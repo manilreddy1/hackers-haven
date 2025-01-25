@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering SQL Injection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <span class="nav-toggle" id="navToggle">☰</span>
+        <ul id="navMenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="index.html#tutorials">Tutorials</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#Community">Community</a></li>
+            <li><a href="index.html#resources">Resources</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Mastering SQL Injection</h1>
+        <p>Understand one of the most critical web application vulnerabilities and learn how to exploit and prevent it.</p>
+    </header>
+
+    <section class="introduction">
+        <h2>What is SQL Injection?</h2>
+        <p>SQL Injection is a code injection technique that exploits vulnerabilities in an application's software by manipulating SQL queries. It allows attackers to bypass authentication, retrieve, modify, or delete database data.</p>
+    </section>
+
+    <section class="types">
+        <h2>Types of SQL Injection Attacks</h2>
+        <ul>
+            <li><strong>Classic SQL Injection:</strong> Exploiting vulnerabilities in queries with malicious input.</li>
+            <li><strong>Blind SQL Injection:</strong> Inference-based attack without directly seeing the database output.</li>
+            <li><strong>Union-Based SQL Injection:</strong> Utilizing the UNION operator to combine database responses.</li>
+            <li><strong>Error-Based SQL Injection:</strong> Extracting data using database error messages.</li>
+        </ul>
+    </section>
+
+    <section class="examples">
+        <h2>Examples of SQL Injection</h2>
+        <p><strong>Basic Injection:</strong> Bypassing login using <code>' OR '1'='1</code> as input.</p>
+        <p><strong>Retrieving Sensitive Data:</strong> Using payloads like <code>' UNION SELECT username, password FROM users --</code>.</p>
+    </section>
+
+    <section class="prevention">
+        <h2>Preventing SQL Injection</h2>
+        <ul>
+            <li>Use prepared statements and parameterized queries.</li>
+            <li>Sanitize and validate user input rigorously.</li>
+            <li>Limit database user permissions.</li>
+            <li>Regularly update and patch software.</li>
+        </ul>
+        <a href="index.html">Back to Tutorials</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hacker's Haven | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

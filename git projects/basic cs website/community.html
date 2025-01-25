@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Haven Community</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-lighter: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --accent-blue: #3B82F6;
+            --accent-green: #10B981;
+            --accent-purple: #8B5CF6;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+        .community-sections {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .section-card {
+            background-color: var(--bg-lighter);
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-10px);
+        }
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .section-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: var(--bg-lighter);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            .community-sections {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">Hacker's Haven</div>
+        <nav>
+            <a href="forums.html">Forums</a>
+            <a href="events.html">Events</a>
+            <a href="members.html">Members</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="community-intro" style="text-align: center; margin: 50px 0;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Hacker's Haven Community</h1>
+            <p style="max-width: 800px; margin: 0 auto; color: var(--text-secondary);">
+                A collaborative platform for technology innovators, cybersecurity experts, and ethical hackers to connect, learn, and grow together.
+            </p>
+        </section>
+
+        <section class="community-sections">
+            <div class="section-card">
+                <h2 class="section-title" style="color: var(--accent-blue);">Forums</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">Engage in discussions, ask questions, and share insights across various tech domains.</p>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li>• Cybersecurity Discussions</li>
+                    <li>• Programming Languages</li>
+                    <li>• Ethical Hacking</li>
+                    <li>• Technology Trends</li>
+                </ul>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title" style="color: var(--accent-green);">Events</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">Upcoming community workshops, webinars, and networking opportunities.</p>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li>• Monthly Hackathons</li>
+                    <li>• Expert Tech Talks</li>
+                    <li>• CTF Competitions</li>
+                    <li>• Skill-sharing Sessions</li>
+                </ul>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title" style="color: var(--accent-purple);">Community Stats</h2>
+                <div class="section-stats">
+                    <div>
+                        <div class="stat-number" style="color: var(--accent-blue);">1500+</div>
+                        <p style="color: var(--text-secondary);">Members</p>
+                    </div>
+                    <div>
+                        <div class="stat-number" style="color: var(--accent-green);">50+</div>
+                        <p style="color: var(--text-secondary);">Active Projects</p>
+                    </div>
+                    <div>
+                        <div class="stat-number" style="color: var(--accent-purple);">24/7</div>
+                        <p style="color: var(--text-secondary);">Community Support</p>
+                    </div>
+                    <div>
+                        <div class="stat-number" style="color: var(--text-secondary);">100+</div>
+                        <p style="color: var(--text-secondary);">Monthly Events</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color: var(--text-secondary);">© 2025 Hacker's Haven Community. All rights reserved.</p>
+    </footer>
+</body>
+</html>

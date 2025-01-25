@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Haven - Events</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-lighter: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --accent-green: #10B981;
+            --accent-blue: #3B82F6;
+            --border-color: #2C2C2C;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            background-color: var(--bg-lighter);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .event-list {
+            margin-top: 30px;
+        }
+        .event-card {
+            background-color: var(--bg-lighter);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+        }
+        .event-date {
+            background-color: var(--accent-green);
+            color: var(--text-primary);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 100px;
+        }
+        .event-details {
+            padding: 15px;
+            flex-grow: 1;
+        }
+        .event-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--accent-blue);
+        }
+        footer {
+            background-color: var(--bg-lighter);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hacker's Haven Events</h1>
+        </div>
+    </header>
+
+    <main class="container event-list">
+        <div class="event-card">
+            <div class="event-date">
+                <strong>MAY</strong>
+                <span>15</span>
+            </div>
+            <div class="event-details">
+                <h2 class="event-title">Cybersecurity Hackathon</h2>
+                <p>Annual community hackathon focusing on innovative security solutions</p>
+                <p>Time: 9:00 AM - 6:00 PM</p>
+                <p>Location: Virtual Event</p>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date">
+                <strong>JUN</strong>
+                <span>22</span>
+            </div>
+            <div class="event-details">
+                <h2 class="event-title">Expert Tech Talk: AI in Cybersecurity</h2>
+                <p>In-depth discussion on machine learning applications in security</p>
+                <p>Time: 7:00 PM - 9:00 PM</p>
+                <p>Location: Online Webinar</p>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date">
+                <strong>JUL</strong>
+                <span>10</span>
+            </div>
+            <div class="event-details">
+                <h2 class="event-title">CTF (Capture The Flag) Competition</h2>
+                <p>Annual cybersecurity skills challenge for community members</p>
+                <p>Time: All Day Event</p>
+                <p>Location: Online Platform</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Hacker's Haven Community</p>
+    </footer>
+</body>
+</html>

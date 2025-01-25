@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Haven - Forums</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-lighter: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --accent-blue: #3B82F6;
+            --border-color: #2C2C2C;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            background-color: var(--bg-lighter);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .forum-list {
+            margin-top: 30px;
+        }
+        .forum-category {
+            background-color: var(--bg-lighter);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .forum-header {
+            background-color: var(--accent-blue);
+            color: var(--text-primary);
+            padding: 15px;
+            font-weight: bold;
+        }
+        .forum-topics {
+            border-top: 1px solid var(--border-color);
+        }
+        .forum-topic {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .forum-topic:hover {
+            background-color: rgba(255,255,255,0.05);
+        }
+        footer {
+            background-color: var(--bg-lighter);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hacker's Haven Forums</h1>
+        </div>
+    </header>
+
+    <main class="container forum-list">
+        <div class="forum-category">
+            <div class="forum-header">Cybersecurity</div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <span>Network Security Discussions</span>
+                    <span>42 threads</span>
+                </div>
+                <div class="forum-topic">
+                    <span>Ethical Hacking Techniques</span>
+                    <span>28 threads</span>
+                </div>
+                <div class="forum-topic">
+                    <span>Threat Intelligence</span>
+                    <span>15 threads</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="forum-category">
+            <div class="forum-header">Programming</div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <span>Python Development</span>
+                    <span>65 threads</span>
+                </div>
+                <div class="forum-topic">
+                    <span>Cybersecurity Scripting</span>
+                    <span>37 threads</span>
+                </div>
+                <div class="forum-topic">
+                    <span>Open Source Contributions</span>
+                    <span>22 threads</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="forum-category">
+            <div class="forum-header">Technology Trends</div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <span>AI and Machine Learning</span>
+                    <span>50 threads</span>
+                </div>
+                <div class="forum-topic">
+                    <span>Blockchain Technologies</span>
+                    <span>25 threads</span>
+                </div>
+                <div class="forum-topic">
+                    <span>Cloud Computing</span>
+                    <span>33 threads</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Hacker's Haven Community</p>
+    </footer>
+</body>
+</html>

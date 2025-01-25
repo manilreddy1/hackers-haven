@@ -1,0 +1,19 @@
+<button class="cta-btn" onclick="downloadAll()">Download All Cheat Sheets</button>
+
+<script>
+function downloadAll() {
+    const files = [
+        { url: '/resources/sheet.jpg', name: 'sheet.jpg' },
+        { url: '/resources/network.gif', name: 'network.gif' }
+    ];
+
+    files.forEach(file => {
+        const a = document.createElement('a');
+        a.href = file.url;
+        a.download = file.name;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+}
+</script>

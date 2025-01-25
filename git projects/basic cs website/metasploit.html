@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Metasploit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <span class="nav-toggle" id="navToggle">☰</span>
+            <ul id="navMenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="index.html#tutorials">Tutorials</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#forum">Community</a></li>
+            <li><a href="index.html#resources">Resources</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h1>Getting Started with Metasploit</h1>
+        <p>Metasploit is one of the most powerful tools available for penetration testing. This tutorial will guide you through the basics of using Metasploit effectively.</p>
+
+        <h2>What is Metasploit?</h2>
+        <p>Metasploit is an open-source framework designed for penetration testing and security auditing. It offers a wide array of exploits, payloads, and tools for simulating attacks and identifying vulnerabilities in systems.</p>
+
+        <h2>Installing Metasploit</h2>
+        <ol>
+            <li>Download the installer for your operating system from the <a href="https://www.metasploit.com/">official Metasploit website</a>.</li>
+            <li>Follow the installation steps provided for your platform (Windows, Linux, or macOS).</li>
+            <li>Once installed, launch the Metasploit console by typing <code>msfconsole</code> in your terminal.</li>
+        </ol>
+
+        <h2>Basic Commands</h2>
+        <p>Here are some essential commands to get you started:</p>
+        <ul>
+            <li><code>search</code>: Search for available exploits.</li>
+            <li><code>use</code>: Load a specific module, such as an exploit or payload.</li>
+            <li><code>show options</code>: Display the configuration options for the selected module.</li>
+            <li><code>set</code>: Set parameters like the target IP address or port.</li>
+            <li><code>exploit</code>: Execute the selected exploit against the target.</li>
+        </ul>
+
+        <h2>Example: Exploiting a Vulnerability</h2>
+        <p>Here's a quick example of exploiting a vulnerable service:</p>
+        <ol>
+            <li>Search for an exploit: <code>search vsftpd</code></li>
+            <li>Select the exploit: <code>use exploit/unix/ftp/vsftpd_234_backdoor</code></li>
+            <li>Set the target IP: <code>set RHOST 192.168.1.100</code></li>
+            <li>Run the exploit: <code>exploit</code></li>
+        </ol>
+
+        <h2>Best Practices</h2>
+        <ul>
+            <li>Always obtain permission before conducting penetration tests.</li>
+            <li>Keep your Metasploit framework updated to access the latest exploits and features.</li>
+            <li>Use virtual machines or isolated environments for testing.</li>
+        </ul>
+
+        <p>Metasploit is a versatile tool that requires practice to master. Start with small test environments and gradually work your way up to more complex scenarios.</p>
+
+        <a href="index.html#tutorials" id="back">Back to Tutorials</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hacker's Haven | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
