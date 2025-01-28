@@ -39,15 +39,15 @@ If you'd like to contribute or run this project locally, follow these steps:
 
 2. Navigate to the project folder:
    ```bash
-cd hackers-haven
+   cd hackers-haven
 
 
 4. (Optional) Install dependencies (if any):
    ```bash
-npm install
+   npm install
 
 
 6. Run the website locally:
    ```bash
-npm start
+   npm start
 
