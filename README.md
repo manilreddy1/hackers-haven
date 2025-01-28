@@ -36,3 +36,12 @@ If you'd like to contribute or run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/manilreddy1/hackers-haven.git
+
+2. Navigate to the project folder:
+cd hackers-haven
+
+3. (Optional) Install dependencies (if any):
+npm install
+
+4. Run the website locally:
+npm start
